@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Only Coders | Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="home-body">
+
+<!-- NAVBAR -->
+<nav class="navbar slide-down">
+<div class="nav-logo glow">ONLY CODERS</div>
+
+<ul class="nav-links">
+<li><a class="nav-item" href="#">Home</a></li>
+<li><a class="nav-item" href="#">About</a></li>
+<li><a class="nav-item" href="#">More</a></li>
+<li><a class="nav-item" id="logout-link" href="#">Logout</a></li>
+</ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="home-section fade-in">
+<h1 class="home-title">Welcome to Only Coders</h1>
+<p class="home-subtitle">YOUR JOURNEY STARTS HERE. WALK IN THE PATH OF SUCCESS WITH US. BE THE BACKBONE OR
+GET THE BACKBONE. 
+</p>
+</section>
+
+<script>
+document.getElementById("logout-link").addEventListener("click", e => {
+e.preventDefault();
+localStorage.removeItem("onlycoders_logged_in");
+window.location.href = "index.html";
+});
+</script>
+
+</body>
+</html>
